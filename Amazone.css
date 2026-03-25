@@ -1,0 +1,800 @@
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ .fevicon{
+  border-radius: 20px;
+ }
+.main{
+  padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   background-color:rgb(206, 206, 206) ;
+}
+ /* ------=======header--========*/
+ .header {
+   height: 60px;
+   border: 2px solid black;
+   background-color: rgb(17, 18, 29);
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+   justify-content: space-around;
+   position: sticky;
+   /* ye sahi hai */
+   top: 0;
+   /* ye line add karo — yahi important hai */
+   z-index: 1000;
+ }
+
+ .headlogo {
+   padding-top: 20px;
+   height: 50px;
+   border: 1px solid transparent;
+   display: flex;
+   padding-left: 5px;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .headlogo:hover {
+   border: 1px solid white;
+ }
+
+ /*--------==================headaddress================-----*/
+ .headaddress {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50px;
+   gap: 6px;
+   color: white;
+   cursor: pointer;
+   padding: 4px 8px;
+ }
+
+ .headaddress .icon {
+   margin-top: 20px;
+ }
+
+
+
+ .headaddress:hover {
+   border: 1px solid white;
+ }
+
+ /*==================----------------head search bar-------------==============*/
+ .headsearch {
+   display: flex;
+   border: 2px solid transparent;
+   border-radius: 8px;
+   overflow: hidden;
+   background-color: white;
+   transition: border 0.2s ease;
+ }
+
+ .headsearch:hover {
+   border: 2px solid rgb(254, 153, 1);
+   box-shadow: 0 0 5px #f90;
+ }
+
+ .headsearch .search-select {
+   height: 40px;
+   width: 50px;
+   border-top-left-radius: 8px;
+   border-bottom-left-radius: 8px;
+   border: none;
+   background-color: rgb(206, 206, 206);
+ }
+
+ .headsearch input[type="text"] {
+   height: 40px;
+   width: 600px;
+   border: none;
+ }
+
+ .headsearch input[type="text"]::placeholder {
+   font-size: 20px;
+   color: gray;
+ }
+
+ .headsearch .search {
+   height: 40px;
+
+ }
+
+ .search {
+   display: flex;
+   align-items: center;
+   border: 2px solid rgb(250, 184, 61);
+   overflow: hidden;
+   background-color: white;
+ }
+
+ .search i {
+   background-color: rgb(250, 184, 61);
+   color: white;
+   padding: 10px 14px;
+   cursor: pointer;
+   font-size: 30px;
+ }
+
+ /*--=======================----------------language select----------------------==============*/
+
+ .lang-select {
+   gap: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   height: 50px;
+ }
+
+ .lang-select:hover {
+   border: 1px solid white;
+ }
+
+ /* .change-language{
+  height: 450px;
+  width: 230px;
+  border: 2px solid black;
+  background-color: white;
+ margin-bottom: -600px;
+} */
+ /*--=====================----------------------sign in acount-----------------===================*/
+
+ .sign-in {
+   color: white;
+   height: 50px;
+   padding: 10px;
+   font-size: smaller;
+ }
+
+ .sign-in:hover {
+   border: 1px solid white;
+ }
+
+ .sign-in .icon1 {
+   display: flex;
+   gap: 5px;
+ }
+
+ .sign-acount {
+   cursor: pointer;
+   position: relative;
+ }
+
+ .sign-img {
+   display: none;
+   position: absolute;
+   height: 400px;
+   width: 480px;
+   border: 2px solid black;
+   margin-left: -220px;
+   margin-top: 25px;
+   z-index: 100;
+ }
+
+ .sign-acount:hover .sign-img {
+   display: block;
+ }
+
+ /*--========================---------------------Return order--------------======================*/
+ .return-order {
+   color: white;
+   height: 50px;
+   padding-top: 5px;
+ }
+
+ .return-order:hover {
+   border: 1px solid white;
+ }
+
+ /*--================================------------------cart---------------==========================*/
+
+ .cart {
+   color: white;
+   display: flex;
+   font-size: xx-large;
+   height: 50px;
+   padding-top: 8px;
+ }
+
+ .textcart {
+   font-size: medium;
+   font-weight: bold;
+   padding-top: 16px;
+ }
+
+ .cart:hover {
+   border: 1px solid white;
+ }
+
+ /*---==========================------------------------------- navbar -----------------------===========================================*/
+
+ .navbar {
+   height: 40px;
+   background-color: rgb(24, 34, 52);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ /*--======================----navbar menu--=======================*/
+
+ .navbar .three-dotes {
+   display: flex;
+   font-size: x-large;
+   margin-left: 5px;
+   height: 40px;
+   padding-top: 7px;
+   cursor: pointer;
+   border: none;
+   color: white;
+ }
+
+ .navbar .three-dotes:hover {
+   border: 1px solid white;
+ }
+
+ .all {
+   font-size: medium;
+   margin-left: 5px;
+   padding-top: 3px;
+ }
+
+ /*-----------============---navbar ul li---===================*/
+ /* .navbar ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+ .navbar ul li {
+   display: inline-block;
+   color: white;
+   margin-left: 15px;
+   height: 40px;
+   padding-top: 10px;
+ }
+
+ .navbar ul li:hover {
+   border: 1px solid white;
+ }
+
+ .primeli {
+   cursor: pointer;
+   position: relative;
+ }
+
+ .prime {
+   display: none;
+   width: 330px;
+   height: 350px;
+   margin-top: 15px;
+   position: absolute;
+   z-index: 100;
+ }
+
+ .primeli:hover .prime {
+   display: block;
+ }
+
+ .freshli {
+   cursor: pointer;
+   position: relative;
+ }
+
+ .fresh {
+   display: none;
+   height: 250px;
+   width: 380px;
+   border: 2px solid black;
+   position: absolute;
+   margin-top: 15px;
+   margin-left: -5px;
+   z-index: 100;
+ }
+
+ .freshli:hover .fresh {
+   display: block;
+ }
+
+ /*---========================================------------------slider----------------------========================================*/
+
+ .slider {
+   height: 550px;
+   width: 97%;
+   overflow: hidden;
+   margin: auto;
+ }
+
+ .slides {
+   display: flex;
+   width: 7500px;
+   animation: slide 20s infinite;
+   padding: 0%;
+ }
+
+ .slides img {
+   width: 1500px;
+   height: 550px;
+ }
+
+ @keyframes slide {
+   0% {
+     transform: translateX(0);
+   }
+
+   25% {
+     transform: translateX(-1500px);
+   }
+
+   50% {
+     transform: translateX(-3000px);
+   }
+
+   75% {
+     transform: translateX(-4500px);
+   }
+
+   100% {
+     transform: translateX(-6000px);
+   }
+ }
+
+ /*----==================================-----------------card-layout-------------==============================*/
+
+ .cart-main1 {
+   height: auto;
+   width: 97%;
+   display: flex;
+   background-color: rgb(220, 220, 220);
+   justify-content: space-around;
+   position: absolute;
+   margin-left: 22px;
+ }
+
+ .cart1 {
+   height: 400px;
+   width: 330px;
+   margin-top: -250px;
+ }
+
+ .cart2 {
+   height: 400px;
+   width: 330px;
+   margin-top: -250px;
+ }
+
+ .cart3 {
+   height: 400px;
+   width: 330px;
+   margin-top: -250px;
+
+ }
+
+ .cart4 {
+   height: 400px;
+   width: 330px;
+   margin-top: -250px;
+ }
+
+ /*--======================---------------------cart2 (cart ui start)----------------=========================*/
+
+ .cartui-main {
+   height: 450px;
+   width: 97%;
+   margin: auto;
+   display: flex;
+   justify-content: space-around;
+   position: absolute;
+   margin-left: 22px;
+   margin-top: 150px;
+   background-color: rgb(213, 213, 213);
+ }
+
+ .cartui1 {
+   height: 400px;
+   width: 330px;
+   margin-top: 25px;
+ }
+
+ .cartui2 {
+   height: 400px;
+   width: 330px;
+   margin-top: 25px;
+ }
+
+ .cartui3 {
+   height: 400px;
+   width: 330px;
+   margin-top: 25px;
+ }
+
+ .cartui4 {
+   height: 400px;
+   width: 330px;
+   margin-top: 25px;
+ }
+
+ /*-------------============================================= 2 slider (bikes)-===================================*/
+
+ .bike-main {
+   height: 349px;
+   width: 94.3%;
+   margin: auto;
+   margin-top: 600px;
+   
+ }
+
+
+ .slider-electric {
+   height: 350px;
+   width: 94.3%;
+   overflow: hidden;
+   margin-top: 650px;
+   position: absolute;
+   background-color: white; 
+   margin-top: -1px;
+ }
+
+.slides-electric {
+  display: flex;
+  width: 4500px; 
+  height: 300px;
+  animation: slidesbike 12s infinite ease-in-out;
+}
+
+.slides-electric img {
+  width: 1500px;
+  height: 300px;
+}
+
+@keyframes slidesbike {
+  0%   { transform: translateX(0); }          
+  25%  { transform: translateX(0); }          
+  35%  { transform: translateX(-1500px); }    
+  60%  { transform: translateX(-1500px); }    
+  70%  { transform: translateX(-3000px); }    
+  95%  { transform: translateX(-3000px); }    
+  100% { transform: translateX(0); }          
+}
+
+/*-================----------------------------- 3 slider (clothes)-------------------------==============*/
+
+.cloth-main{
+  height: 349px;
+  width: 94.3%;
+  background-color: white;
+  margin: auto;
+  margin-top: 30px;
+}
+.slider-clothes{
+  height: 350px;
+  width: 100%;
+  color: black;
+  overflow: hidden; 
+  margin: auto;
+  margin-top: -10px;
+}
+.slides-cloth{
+  display: flex;
+  width: 4500px; 
+  height: 300px;
+  animation: slidescloth 16s infinite ease-in-out;
+}
+.slides-cloth img{
+  height: 300px;
+  width: 1500px;
+}
+@keyframes slidescloth {
+  0%   { transform: translateX(0); }          
+  25%  { transform: translateX(0); }          
+  35%  { transform: translateX(-1500px); }    
+  60%  { transform: translateX(-1500px); }    
+  70%  { transform: translateX(-3000px); }    
+  95%  { transform: translateX(-3000px); }    
+  100% { transform: translateX(0); }           
+}
+
+/*----------------------------------------------------cart3 (cart a start)--------------------------------------------------*/
+
+.carta3-main{
+  height:400px;
+  width: 94.3%;
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgb(213, 213, 213) ;
+  display: flex;
+  justify-content: space-between;
+}
+.carta1{
+  height: 400px;
+  width:330px;
+  background-color: white;
+}
+.carta2{
+  height: 400px;
+  width: 330px;
+  background-color: white;
+}
+.carta3{
+  height: 400px;
+  width: 330px;
+  background-color: white;
+}
+.carta4{
+  height: 400px;
+  width: 330px;
+  background-color: white;
+}
+
+/*----================================================== slider (slider 4)=========================================*/
+
+.slider-main4{
+  height: 349px;
+  width: 94.3%;
+  background-color: white;
+  margin: auto;
+  margin-top: 30px;
+}
+.slider4{
+  height: 350px;
+  width: 100%;
+  color: black;
+  overflow: hidden; 
+  margin: auto;
+  margin-top: -10px;
+}
+.slides4{
+  display: flex;
+  width: 3000px; 
+  height: 300px;
+  animation: slider4 16s infinite ease-in-out;
+}
+@keyframes slider4{
+  
+}
+
+/*-----------------------------------------------------cart 4 start-------------------------------------------*/
+.cartb4-main{
+  height:400px;
+  width: 94.3%;
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgb(213, 213, 213) ;
+  display: flex;
+  justify-content: space-between;
+}
+.cartb1{
+   height: 400px;
+  width:330px;
+  background-color: white;
+}
+.cartb2{
+   height: 400px;
+  width:330px;
+  background-color: white;
+}
+.cartb3{
+   height: 400px;
+  width:330px;
+  background-color: white;
+}
+.cartb4{
+   height: 400px;
+  width:330px;
+  background-color: white;
+}
+/*---========================================sign in button===================================================*/
+
+.sign-in-button-main{
+  height: 220px;
+  width: 100%;
+  background-color:white;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+ 
+}
+.sign-in-button{
+  height: 180px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgb(70, 70, 70);
+  margin-top: 20px;
+  text-align: center;
+}
+.sign-in-button button{
+  height: 35px;
+  width: 250px;
+  font-size: 15px;
+  background-color: rgb(254, 220, 4);
+  border-radius: 30px;
+  border: none;
+  margin-top: -15px;
+}
+.sign-in-button h1{
+  margin-top: 40px;
+  font-size: 35px;
+}
+/*------------------------------------------------------- back to top (div start)------------------------------*/
+.tap-to{
+  height: 50px;
+  color: white;
+  background-color:  rgb(55, 71, 90);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tap-to:hover{
+  background-color: rgba(114, 126, 138, 0.412);
+} 
+
+/*---------------------------------------------------------start footer 1 -------------------------------------*/
+.footer1{
+  height: 500px;
+  background-color: rgb(35, 47, 62);
+  display: flex;
+}
+.footer-cart1{
+  height: 400px;
+  width: 150px;
+  color: white;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+.footer-cart1 ul li{
+  line-height: 27px;
+}
+.footer-cart1 ul li:hover{
+  text-decoration: underline;
+}
+.footer-cart2{
+  height: 400px;
+  width: 220px;
+  margin-top: 50px;
+  margin-left: 80px;
+  color: white;
+}
+.footer-cart2 ul li{
+  line-height: 27px;
+}
+.footer-cart2 ul li:hover{
+  text-decoration: underline;
+}
+.footer-cart3{
+  height: 400px;
+  width: 240px;
+  color: white;
+  margin-top: 50px;
+  margin-left: 120px;
+}
+.footer-cart3 ul li{
+  line-height: 27px;
+}
+.footer-cart3 ul li:hover{
+  text-decoration: underline;
+}
+.footer-cart4{
+  height: 400px;
+  width: 240px;
+  color: white;
+  margin-top: 50px;
+  margin-left: 110px;
+}
+.footer-cart4 ul li{
+  line-height: 27px;
+}
+.footer-cart4 ul li:hover{
+  text-decoration: underline;
+}
+/*------------------------------------------------------- footer 2 (start)---------------------------------------*/
+
+.footer2-main{
+  height: 110px;
+  border-top: 1px solid rgba(255, 255, 255, 0.314);
+  background-color:rgb(35, 47, 62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eng{
+  height: 40px;
+  width: 130px;
+  margin-left: 100px;
+  margin-top: -15px;
+}
+.coun{
+  height: 40px;
+  width: 130px;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+/*-----------------------------------------------footer 3 ---------------------------------------------------------*/
+
+.footer3-main{
+  height: 170px;
+  background-color:rgb(19, 26, 34);
+  display: flex;
+}
+.footer3-cart1{
+  height: 100px;
+  width: 100px;
+  color: white;
+  margin-left: 190px;
+  margin-top: 30px;
+}
+.footer3-cart2{
+  height: 100px;
+  width: 100px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.footer3-cart3{
+  height: 130px;
+  width: 100px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.footer3-cart4{
+  height: 130px;
+  width: 100px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.footer3-cart5{
+   height: 130px;
+  width: 100px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.footer3-cart6{
+   height: 130px;
+  width: 100px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.footer3-cart7{
+   height: 130px;
+  width: 100px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.footer3-cart8{
+   height: 130px;
+  width: 100px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+/*-------------------------------------------------last footer start-----------------------------------------------*/
+
+.footer4-main{
+  height: 60px;
+  color: white;
+  background-color: rgb(19, 26, 34);
+}
+.footer4-main ul{
+  display: flex;
+  justify-content: center;
+}
+.footer4-main ul li{
+  margin-left: 20px;
+}
+.footer4-main span{
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+}
